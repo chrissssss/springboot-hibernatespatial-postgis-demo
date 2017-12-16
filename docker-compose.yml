@@ -1,0 +1,8 @@
+container1:
+  image: chrissssss/springboot-hibernatespatial-postgis-demo:0.0.1-SNAPSHOT
+  links:
+    - container2
+container2:
+  image: mdillon/postgis
+  environment:
+    POSTGRES_PASSWORD: mysecretpassword
